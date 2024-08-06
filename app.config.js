@@ -6,8 +6,8 @@ import js from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript'
 import csharp from 'react-syntax-highlighter/dist/cjs/languages/prism/csharp'
 
 const appConfig = {
-    domain: 'https://jwilkie.github.io/website-template',
-    title: 'Programmation Web Serveur',
+    domain: 'https://jgaud-lacite.github.io/logique-programmation/',
+    title: 'Logique de Programmation',
     sectionName: 'module',
     code: {
         languages: {

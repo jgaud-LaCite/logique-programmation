@@ -18,7 +18,7 @@ export default function Footer() {
         </div>
         <div className={styles.text}>
             <p>© Collège La Cité {new Date().getFullYear()}</p>
-            <p className={styles.credits}>Développé par Jonathan Wilkie | Design par Catherine Wilkie</p>
+            <p className={styles.credits}>Développé par Jean-Gabriel Gaudreault et Jonathan Wilkie | Design par Catherine Wilkie</p>
         </div>
     </footer>
 }

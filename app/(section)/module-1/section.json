@@ -1,8 +1,11 @@
 {
     "title": "Module 1",
-    "description": "Description de module",
+    "description": "Introduction à la programmation et au langage de programmation Python. Installation de l'environnement de développement et écriture d'un premier programme.",
     "pages": [
-        "test2",
-        "lab-01"
+        "introduction-programmation",
+        "introduction-python",
+        "premier-programme",
+        "lab-installation",
+        "lab-exercices"
     ]
 }
