@@ -37,9 +37,9 @@ export default function Page() {
         </section>
 
         <section>
-            <h2>Penser de façon "programmatique"</h2>
+            <h2>Penser de façon &quot;programmatique&quot;</h2>
             <p>
-                Lorsque vous apprenez à programmer, vous devrez également apprendre à penser de façon "programmatique". 
+                Lorsque vous apprenez à programmer, vous devrez également apprendre à penser de façon &quot;programmatique&quot;. 
                 Cela signifie que vous apprenez à résoudre des problèmes de façon structurée, en décomposant
                 un problème complexe en plusieurs problèmes plus petits et plus faciles à résoudre. Vous apprenez
                 également à décomposer ces problèmes en étapes plus petites et plus simples, jusqu&apos;à ce que vous
@@ -51,7 +51,7 @@ export default function Page() {
                 Ce programme demande à l&apos;utilisateur son année de naissance, 
                 puis calcule son âge et affiche à l&apos;écran s&apos;il est majeur ou non. Vous pouvez 
                 exécuter ce programme directement dans cette page en cliquant sur le bouton 
-                "Exécuter" qui ressemble à un symbole "Play" ci-dessous.
+                &quot;Exécuter&quot; qui ressemble à un symbole &quot;Play&quot; ci-dessous.
             </p>
 
             <iframe src="https://trinket.io/embed/python/5d92c520ff" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
@@ -73,7 +73,7 @@ export default function Page() {
             
             <p>
             Si vous n&apos;êtes pas habitué à écrire du code informatique, il peut vous falloir un certain temps pour adapter votre esprit
-            à penser de façon "programmatique". C&apos;est tout à fait normal! La programmation est une compétence qui s&apos;apprend avec la pratique.
+            à penser de façon &quot;programmatique&quot;. C&apos;est tout à fait normal! La programmation est une compétence qui s&apos;apprend avec la pratique.
             </p>
         </section>
     </>;

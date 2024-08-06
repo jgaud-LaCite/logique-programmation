@@ -29,7 +29,7 @@ export default function Page() {
             </ol>
 
             <p>
-                Ces instructions sont essentiellement un "programme" qui permet de faire une tâche précise, ici
+                Ces instructions sont essentiellement un &quot;programme&quot; qui permet de faire une tâche précise, ici
                 de faire la lessive. Vous remarquerez que cest instructions sont très précises, allant jusqu&apos;à spécifier de vérifier
                 si du linge est déjà présent dans la machine avant de débuter. Bien qu&apos;en tant qu&apos;humain cette instruction
                 peut nous sembler inutile, pour un ordinateur elle est essentielle. Effectivement, contrairement aux humains,
@@ -48,7 +48,7 @@ export default function Page() {
             </p>
 
             <p>
-                "Placer le linge dans la machine"
+                &quot;Placer le linge dans la machine&quot;
             </p>
 
             <p>
