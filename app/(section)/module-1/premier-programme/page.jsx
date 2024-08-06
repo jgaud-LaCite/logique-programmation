@@ -25,21 +25,21 @@ export default function Page() {
         <section>
             <h2>Exécution</h2>
             <p>
-                Une fois Python installé, il existe plusieurs façons d'exécuter votre code. Spécifiquement, 
-                vous pouvez exécuter le programme en le tapant directement dans la console de votre système d'exploitation
+                Une fois Python installé, il existe plusieurs façons d&apos;exécuter votre code. Spécifiquement, 
+                vous pouvez exécuter le programme en le tapant directement dans la console de votre système d&apos;exploitation
                 ligne par ligne. Cependant, lorsque nous aurons des programmes plus complexes, nous allons plutôt les écrire dans un fichier
                 puisque cela est plus pratique. Un programme peut également être exécuté à partir de plusieurs fichiers.
-                Nous verrons plus tard qu'il est également possible d'exécuter du code Python de d'autre manières, par exemple
-                à l'intérieur d'un <a target="_blank" rel="noopener noreferrer" href="https://jupyter.org/">Jupyter Notebook</a>.
+                Nous verrons plus tard qu&apos;il est également possible d&apos;exécuter du code Python de d&apos;autre manières, par exemple
+                à l&apos;intérieur d&apos;un <a target="_blank" rel="noopener noreferrer" href="https://jupyter.org/">Jupyter Notebook</a>.
             </p>
 
             <h3>Exécution sur la console</h3>
             <p>
-                Pour exécuter du code Python, il suffit d'ouvrir un terminal et d'exécuter la commande <IC>python3</IC>. 
-                Cette commande ouvre un interpréteur Python qui permet d'exécuter du code Python directement dans la console.
+                Pour exécuter du code Python, il suffit d&apos;ouvrir un terminal et d&apos;exécuter la commande <IC>python3</IC>. 
+                Cette commande ouvre un interpréteur Python qui permet d&apos;exécuter du code Python directement dans la console.
             </p>
 
-            <h3>Exécution à partir d'un fichier</h3>
+            <h3>Exécution à partir d&apos;un fichier</h3>
         </section>
         
     </>;
