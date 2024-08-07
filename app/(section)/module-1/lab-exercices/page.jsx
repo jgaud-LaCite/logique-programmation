@@ -67,7 +67,7 @@ export default function Page() {
             {exercice3}
         </CodeBlock>
         <Spoiler buttonLabel="Valider votre réponse">
-            <CodeSubmission filename="indoor.py" slug="cs50/problems/2022/python/indoor">
+            <CodeSubmission filename="test.py" slug="jgaud-LaCite/logique-programmation/main/checks/labo1/exercice3">
             </CodeSubmission>
         </Spoiler>
     </section>
