@@ -4,7 +4,7 @@ import styles from './CodeSubmission.module.css';
 
 import { useState } from 'react';
 
-const CodeSubmission = ({filename = '', slug = ''}) => {
+const CodeSubmission = ({slug = ''}) => {
     const [code, setCode] = useState('');
     const [result, setResult] = useState('');
 
@@ -26,7 +26,7 @@ const CodeSubmission = ({filename = '', slug = ''}) => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ code, filename, slug })
+                body: JSON.stringify({ code, slug })
             });
 
             if (!response.ok) {
@@ -57,7 +57,7 @@ const CodeSubmission = ({filename = '', slug = ''}) => {
                     value={code}
                     onChange={handleCodeChange}
                     rows="10"
-                    cols="50"
+                    cols="90"
                     placeholder="Copiez votre code ici..."
                     required
                 />
