@@ -68,7 +68,7 @@ export default function Page() {
                 {multilinePrintEnd}
             </CodeBlock>
             <p>
-                En ajoutant l&apos;argument <IC>end=" "</IC> à la fonction <IC>print</IC>, on peut spécifier ce qui doit être ajouté à la fin de chaque appel.
+                En ajoutant l&apos;argument <IC>end=&quot; &quot;</IC> à la fonction <IC>print</IC>, on peut spécifier ce qui doit être ajouté à la fin de chaque appel.
                 Dans cet exemple, on ajoute un espace à la fin de chaque appel.
             </p>
             <ColoredBox title="Note">
