@@ -4,10 +4,9 @@ check50:
       - run: python3 test.py
         stdout: 
           - Bonjour tout le monde
-          - |
-            Bonjour
-            tout
-            le
-            monde
+          - Bonjour
+          - tout
+          - le
+          - monde
           - L'utilite de la fonction print est de pouvoir ecrire des choses a l'ecran
         exit: 0

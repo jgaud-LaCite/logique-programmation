@@ -20,15 +20,9 @@ print("Votre groupe est : " + grp) # ...............................`
 
 export const exercice3 =
 `print("Bonjour tout le monde')
-print("#Bonjour\\ntout\\nle\\monde")
+print("Bonjour\\ntout\\nle\\nmonde")
 print('L'utilite de la fonction print est de pouvoir ecrire des choses a l'ecran')
 C#ommentaire`
-
-export const exercice3Solution =
-`print("Bonjour tout le monde")
-print("#Bonjour\\ntout\\nle\\monde")
-print("L'utilite de la fonction print est de pouvoir ecrire des choses a l'ecran")
-# Commentaire`
 
 export default function Page() {
     return <>
