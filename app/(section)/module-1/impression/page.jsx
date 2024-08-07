@@ -35,7 +35,7 @@ export default function Page() {
         <section>
             <h2>Impression</h2>
             <p>
-                Imprimer quelque chose à l&apos;écran est une des premières choses que l&apos;on apprend à faire en programmation. C'est une
+                Imprimer quelque chose à l&apos;écran est une des premières choses que l&apos;on apprend à faire en programmation. C&apos;est une
                 forme de sortie qui permet de voir ce que fait notre programme. En Python, il est possible d&apos;imprimer du texte à l&apos;écran
                 à l&apos;aide de la fonction <IC>print</IC>. 
             </p>
@@ -54,7 +54,7 @@ export default function Page() {
                 {`print("Bonjour tout le monde!")`}
             </CodeBlock>
             <p>
-                Chaque ligne est effectuée l'une après l'autre, maintenant qu'est ce qu'il se passe si on 
+                Chaque ligne est effectuée l&apos;une après l&apos;autre, maintenant qu&apos;est ce qu&apos;il se passe si on 
                 remplace notre code précédent par:
             </p>
             <CodeBlock language="python">
@@ -73,8 +73,8 @@ export default function Page() {
             </p>
             <ColoredBox title="Note">
                 Vous vous demandez peut-être pourquoi on utilise des guillemets pour entourer le texte. En Python, les guillemets sont utilisés pour délimiter les chaînes de caractères 
-                que l'on appelle <IC>string</IC>. C'est un concept que nous verrons plus en détaiuls dans les prochains modules.
-                Il est possible d&apos;utiliser des guillemets simples <IC>'</IC> ou doubles <IC>"</IC> pour délimiter une chaîne de caractères. Il est important de noter que les guillemets
+                que l&apos;on appelle <IC>string</IC>. C&apos;est un concept que nous verrons plus en détaiuls dans les prochains modules.
+                Il est possible d&apos;utiliser des guillemets simples <IC>&apos;</IC> ou doubles <IC>&quot;</IC> pour délimiter une chaîne de caractères. Il est important de noter que les guillemets
                 doivent être identiques au début et à la fin de la chaîne de caractères.
             </ColoredBox>
 

@@ -54,7 +54,7 @@ export default function Page() {
             </p>
 
             <p>
-                Vous pouvez ensuite écrire votre code Python à l&apos;intérieur de ce fichier. Si vous avez correctement installer l'extension Python pour Visual Studio Code,
+                Vous pouvez ensuite écrire votre code Python à l&apos;intérieur de ce fichier. Si vous avez correctement installer l&apos;extension Python pour Visual Studio Code,
                 vous devriez voir votre code coloré. Pour exécuter le code, vous pouvez cliquer sur le bouton triangle qui ressemble à <IC>Play</IC> en haut à droite de l&apos;éditeur
                 ou en appuyant sur <kbd>CTRL+F5</kbd> sur votre clavier.
             </p>

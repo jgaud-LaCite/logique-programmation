@@ -35,7 +35,7 @@ export default function Page() {
     <section>
         <h2>Exercice 1</h2>
         <p>
-            Écrire un programme qui imprime votre nom et prénom à l'écran.
+            Écrire un programme qui imprime votre nom et prénom à l&apos;écran.
         </p>
         <Spoiler buttonLabel="Afficher indice">
             <BorderedBox>
