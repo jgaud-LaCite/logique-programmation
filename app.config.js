@@ -4,6 +4,7 @@ import html from 'react-syntax-highlighter/dist/cjs/languages/prism/markup'
 import css from 'react-syntax-highlighter/dist/cjs/languages/prism/css'
 import js from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript'
 import csharp from 'react-syntax-highlighter/dist/cjs/languages/prism/csharp'
+import python from 'react-syntax-highlighter/dist/cjs/languages/prism/python'
 
 const appConfig = {
     domain: 'https://jgaud-lacite.github.io/logique-programmation/',
@@ -14,7 +15,8 @@ const appConfig = {
             'html': { tag: 'HTML', renderer: html },
             'css': { tag: 'CSS', renderer: css },
             'js': { tag: 'Javascript', renderer: js },
-            'csharp': { tag: 'C#', renderer: csharp }
+            'csharp': { tag: 'C#', renderer: csharp },
+            'python': { tag: 'Python', renderer: python },
         },
         themes: {
             light: vs,

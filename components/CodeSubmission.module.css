@@ -1,0 +1,12 @@
+.submitBox {
+    padding: .5rem;
+    font-style: italic;
+    border: 2px solid var(--bordered-box-border-color);
+}
+
+.submitCodeButton {
+    background-color: var(--bg-accent-color);
+    color: var(--text-inverted-color);
+    padding: 0.5rem 0.75rem;
+    margin-top: 10px;
+}
