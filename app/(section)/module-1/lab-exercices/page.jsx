@@ -24,6 +24,7 @@ print("Bonjour\\ntout\\nle\\nmonde")
 print('L'utilite de la fonction print est de pouvoir ecrire des choses a l'ecran')
 C#ommentaire`
 
+
 export default function Page() {
     return <>
     <section>
@@ -31,13 +32,6 @@ export default function Page() {
         <p>
             Écrire un programme qui imprime votre nom et prénom à l&apos;écran.
         </p>
-        <Spoiler buttonLabel="Afficher indice">
-            <BorderedBox>
-                <p>
-                    Utiliser la fonction <IC>print</IC> pour imprimer votre nom et prénom.
-                </p>
-            </BorderedBox>
-        </Spoiler>
     </section>
 
     <section>
