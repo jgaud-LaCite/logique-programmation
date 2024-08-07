@@ -15,7 +15,7 @@ export const metadata = {
 export default function Page() {
     return <>
         <ColoredBox title="Attention">
-                Cette section assume que vous avez déjà effectué le <a href="/module-1/lab-installation">Laboratoire 0 - Installation des logiciels</a>. 
+                Cette section assume que vous avez déjà effectué le <a href="../lab-installation">Laboratoire 0 - Installation des logiciels</a>. 
                 Si ce n&apos;est pas le cas, veuillez le faire avant de continuer.
         </ColoredBox>
         <section>
