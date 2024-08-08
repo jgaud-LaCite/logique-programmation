@@ -67,7 +67,7 @@ const CodeSubmission = ({slug = ''}) => {
                 />
                 <br />
                 <div className={styles.buttonContainer}>
-                    <button type="submit" className={styles.submitCodeButton}>Soumettre</button>
+                    <button type="submit" className={styles.submitCodeButton} disabled={loading}>Soumettre</button>
                     {loading && <div className={styles.spinner}></div>}
                 </div>
             </form>

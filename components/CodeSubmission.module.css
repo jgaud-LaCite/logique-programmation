@@ -10,6 +10,11 @@
     padding: 0.5rem 0.75rem;
 }
 
+.submitCodeButton:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+}
+
 .spinner {
     border: 4px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
@@ -19,12 +24,12 @@
     animation: spin 1s linear infinite;
   }
 
-  @keyframes spin {
+@keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-  }
+}
 
-  .buttonContainer {
+.buttonContainer {
     margin-top: 1rem;
     display: flex;
     align-items: center;
