@@ -1,6 +1,7 @@
 'use client';
 
 import styles from './CodeSubmission.module.css';
+
 import { useState } from 'react';
 
 const CodeSubmission = ({slug = ''}) => {
@@ -15,15 +16,16 @@ const CodeSubmission = ({slug = ''}) => {
         e.preventDefault();
 
         if (!code) {
-            alert('Veuillez entrer votre code!');
+            alert('Veuillez entre votre code!');
             return;
         }
 
         try {
-            const response = await fetch('/api/submit-check', {
+            const response = await fetch(process.env.NEXT_PUBLIC_CODE_CHECKER_API_URL, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'api-key': process.env.NEXT_PUBLIC_CODE_CHECKER_API_KEY
                 },
                 body: JSON.stringify({ code, slug })
             });
