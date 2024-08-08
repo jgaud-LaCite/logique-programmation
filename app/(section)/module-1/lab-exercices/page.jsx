@@ -1,6 +1,4 @@
 import Spoiler from "@/components/Spoiler";
-import IC from "@/components/InlineCode";
-import BorderedBox from "@/components/BorderedBox";
 import CodeBlock from "@/components/CodeBlock";
 import CodeSubmission from "@/components/CodeSubmission";
 

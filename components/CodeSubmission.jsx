@@ -1,7 +1,6 @@
 'use client';
 
 import styles from './CodeSubmission.module.css';
-
 import { useState } from 'react';
 
 const CodeSubmission = ({slug = ''}) => {
@@ -16,15 +15,15 @@ const CodeSubmission = ({slug = ''}) => {
         e.preventDefault();
 
         if (!code) {
-            alert('Veuillez entre votre code!');
+            alert('Veuillez entrer votre code!');
             return;
         }
 
         try {
-            const response = await fetch('https://jgaudLaCite.pythonanywhere.com/submit_check50', {
+            const response = await fetch('/api/submit-check', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({ code, slug })
             });
