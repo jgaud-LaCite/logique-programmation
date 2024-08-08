@@ -35,3 +35,7 @@
     align-items: center;
     gap: 10px;
 }
+
+.editorContainer {
+    height: 300px;
+}

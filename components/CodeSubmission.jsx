@@ -3,20 +3,29 @@
 import styles from './CodeSubmission.module.css';
 
 import { useState } from 'react';
+import { useTheme } from 'next-themes';
+import AceEditor from "react-ace";
+import 'ace-builds/src-noconflict/mode-python';
+import 'ace-builds/src-noconflict/theme-monokai';
+import 'ace-builds/src-noconflict/theme-textmate';
+import 'ace-builds/src-noconflict/ext-language_tools';
 
 const CodeSubmission = ({slug = ''}) => {
     const [code, setCode] = useState('');
     const [loading, setLoading] = useState(false);
+    const { theme } = useTheme();
 
-    const handleCodeChange = (e) => {
-        setCode(e.target.value);
+    const aceTheme = theme === 'dark' ? 'monokai' : 'textmate';
+
+    const handleCodeChange = (newCode) => {
+        setCode(newCode);
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         if (!code) {
-            alert('Veuillez entre votre code!');
+            alert('Veuillez entrer votre code!');
             return;
         }
 
@@ -57,14 +66,29 @@ const CodeSubmission = ({slug = ''}) => {
         <div className={styles.submitBox}>
             <p>Copier/Coller votre code ci-bas, appuyer sur Soumettre et attendez quelques secondes.</p>
             <form onSubmit={handleSubmit}>
-                <textarea
-                    value={code}
-                    onChange={handleCodeChange}
-                    rows="10"
-                    cols="90"
-                    placeholder="Copiez votre code ici..."
-                    required
-                />
+                <div className={styles.editorContainer}>
+                    <AceEditor
+                        placeholder="Copiez votre code ici..."
+                        mode="python"
+                        theme={aceTheme}
+                        name="code-editor"
+                        onChange={handleCodeChange}
+                        fontSize={14}
+                        lineHeight={19}
+                        showPrintMargin={true}
+                        showGutter={true}
+                        highlightActiveLine={true}
+                        value={code}
+                        setOptions={{
+                            enableBasicAutocompletion: false,
+                            enableLiveAutocompletion: true,
+                            enableSnippets: false,
+                            showLineNumbers: true
+                        }}
+                        width='100%'
+                        height='100%'
+                    />
+                </div>
                 <br />
                 <div className={styles.buttonContainer}>
                     <button type="submit" className={styles.submitCodeButton} disabled={loading}>Soumettre</button>
