@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 const CodeSubmission = ({slug = ''}) => {
     const [code, setCode] = useState('');
-    const [result, setResult] = useState('');
+    const [loading, setLoading] = useState(false);
 
     const handleCodeChange = (e) => {
         setCode(e.target.value);
@@ -19,6 +19,8 @@ const CodeSubmission = ({slug = ''}) => {
             alert('Veuillez entre votre code!');
             return;
         }
+
+        setLoading(true);
 
         try {
             const response = await fetch('https://jgaudLaCite.pythonanywhere.com/submit_check50', {
@@ -35,7 +37,6 @@ const CodeSubmission = ({slug = ''}) => {
             }
 
             const data = await response.json();
-            setResult(data.result);
 
             // Open result in a new tab
             const newWindow = window.open('', '_blank');
@@ -47,6 +48,8 @@ const CodeSubmission = ({slug = ''}) => {
 
         } catch (error) {
             console.error('Error:', error);
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -63,7 +66,10 @@ const CodeSubmission = ({slug = ''}) => {
                     required
                 />
                 <br />
-                <button type="submit" className={styles.submitCodeButton}>Soumettre</button>
+                <div className={styles.buttonContainer}>
+                    <button type="submit" className={styles.submitCodeButton}>Soumettre</button>
+                    {loading && <div className={styles.spinner}></div>}
+                </div>
             </form>
         </div>
     );
