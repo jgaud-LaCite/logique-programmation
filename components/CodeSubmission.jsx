@@ -21,7 +21,7 @@ const CodeSubmission = ({slug = ''}) => {
         }
 
         try {
-            const response = await fetch(process.env.NEXT_PUBLIC_CODE_CHECKER_API_URL, {
+            const response = await fetch('https://jgaudLaCite.pythonanywhere.com/submit_check50', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

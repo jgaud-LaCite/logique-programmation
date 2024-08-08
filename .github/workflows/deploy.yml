@@ -67,6 +67,7 @@ jobs:
           touch .env
           echo CODE_CHECKER_API_URL=${{ secrets.CODE_CHECKER_API_URL }} >> .env
           echo CODE_CHECKER_API_KEY=${{ secrets.CODE_CHECKER_API_KEY }} >> .env
+          cat .env
         
       - name: Build with Next.js
         run: npx --no next build
