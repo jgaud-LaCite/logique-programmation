@@ -23,7 +23,7 @@ export default function Page() {
         <section>
             <h2>Exercice 1</h2>
             <p>
-                Écrire un programme qui calcule le prix TTC (Toutes Taxes comprises) d'un prix HT (Hors Taxes) entré au clavier. En
+                Écrire un programme qui calcule le prix TTC (Toutes Taxes comprises) d&apos;un prix HT (Hors Taxes) entré au clavier. En
                 sachant que les taxes sont de 13%.
             </p>
             <Image src={ex1} alt="" width="900" height="200"></Image>

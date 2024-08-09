@@ -60,10 +60,10 @@ export default function Page() {
             <h2>Chaînes de caractères</h2>
             <p>
                 Les chaînes de caractères sont des séquences de caractères. Comme nous avons vu précedemment, 
-                elles sont délimitées par des guillemets simples <IC>&apos;</IC> ou doubles <IC>"</IC>. Par exemple: <IC>name = &apos;Alice&apos;</IC>, <IC>name = "Bob"</IC>.
+                elles sont délimitées par des guillemets simples <IC>&apos;</IC> ou doubles <IC>&quot;</IC>. Par exemple: <IC>name = &apos;Alice&apos;</IC>, <IC>name = &quot;Bob&quot;</IC>.
             </p>
             <ColoredBox title="Attention">
-                Si vous indiquer une variable contenant un nombre entre guillements, Python la traitera comme une chaîne de caractères et non un nombre. <IC>nb = "42"</IC> est
+                Si vous indiquer une variable contenant un nombre entre guillements, Python la traitera comme une chaîne de caractères et non un nombre. <IC>nb = &quot;42&quot;</IC> est
                 une chaîne de caractères et non un entier.
             </ColoredBox>
         </section>

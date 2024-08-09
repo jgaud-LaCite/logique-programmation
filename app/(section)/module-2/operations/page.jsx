@@ -33,7 +33,7 @@ export default function Page() {
                 <li><IC>*</IC> pour la multiplication</li>
                 <li><IC>**</IC> pour l&apos;exposant</li>
                 <li><IC>/</IC> pour la division</li>
-                <li><IC>//</IC> pour la division entière</li>
+                <li><IC>&#47;&#47;</IC> pour la division entière</li>
                 <li><IC>%</IC> pour le modulo (reste de la division entière)</li>
             </ul>
             <p>
