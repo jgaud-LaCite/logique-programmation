@@ -1,3 +1,4 @@
+import CodeBlock from "@/components/CodeBlock";
 import IC from "@/components/InlineCode";
 /**
  * @type {import("next").Metadata}
@@ -8,6 +9,19 @@ export const metadata = {
     keywords: ["Python", "introduction"],
     group: "notes",
 }
+
+export const penser_programmatique =
+`import time
+
+annee_courante = int(time.strftime('%Y'))
+annee_naissance = int(input("Quelle est votre année de naissance? "))
+
+age = annee_courante - annee_naissance
+
+if(age >= 18):
+  print("Vous avez " + str(age) + " ans et vous êtes majeur.")
+else:
+  print("Vous avez " + str(age) + " ans et vous n'êtes pas majeur.")`;
 
 export default function Page() {
     return <>
@@ -49,12 +63,12 @@ export default function Page() {
             <p>
                 À titre d&apos;exemple, regarder le court programme Python ci-dessous. 
                 Ce programme demande à l&apos;utilisateur son année de naissance, 
-                puis calcule son âge et affiche à l&apos;écran s&apos;il est majeur ou non. Vous pouvez 
-                exécuter ce programme directement dans cette page en cliquant sur le bouton 
-                &quot;Exécuter&quot; qui ressemble à un symbole &quot;Play&quot; ci-dessous.
+                puis calcule son âge et affiche à l&apos;écran s&apos;il est majeur ou non.
             </p>
 
-            <iframe src="https://trinket.io/embed/python/5d92c520ff" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+            <CodeBlock language="python">
+                {penser_programmatique}
+            </CodeBlock>
 
             <p>
                 Ne paniquez pas, il est normal que ce programme vous semble complexe pour l&apos;instant et que vous

@@ -1,0 +1,11 @@
+{
+    "title": "Module 2",
+    "description": "Introduction aux concepts de variables, de types de données, à la lecture au clavier et aux opérations.",
+    "pages": [
+        "variables",
+        "lecture",
+        "types",
+        "operations",
+        "lab2-exercices"
+    ]
+}
