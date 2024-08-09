@@ -1,11 +1,13 @@
 import Spoiler from "@/components/Spoiler";
-import CodeBlock from "@/components/CodeBlock";
 import CodeSubmission from "@/components/CodeSubmission";
 import Image from 'next/image';
 
 
-import ex1 from '@/public/img/labo2/ex1.gif';
-import ex2 from '@/public/img/labo2/ex2.gif';
+import ex1 from '@/public/img/labo2/ex1.png';
+import ex2 from '@/public/img/labo2/ex2.png';
+import ex3 from '@/public/img/labo2/ex3.png';
+import ex4 from '@/public/img/labo2/ex4.png';
+import ex5 from '@/public/img/labo2/ex5.png';
 
 /**
  * @type {import("next").Metadata}
@@ -48,8 +50,14 @@ export default function Page() {
         <section>
             <h2>Exercice 3</h2>
             <p>
-                Périmètre
+                Écrire un programme qui demande à l’utilisateur de donner le rayon d’un cercle et lui retourne sa
+                surface et son périmètre. En sachant que la surface d’un cercle est donnée par la formule π * r² et que le
+                périmètre est donné par la formule 2 * π * r. 
             </p>
+            <p>
+                π est une constante égale à 3.1416.
+            </p>
+            <Image src={ex3} alt="" width="900" height="200"></Image>
             <Spoiler buttonLabel="Valider votre réponse">
                 <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo2/ex3">
                 </CodeSubmission>
@@ -59,8 +67,10 @@ export default function Page() {
         <section>
             <h2>Exercice 4</h2>
             <p>
-                Rectangle
+                Écrire un programme qui fournit une valeur en dollar US à partir d&apos;un prix entré en dollar CAD. En sachant que 1 dollar US
+                équivaut à environ 1.35 dollar CAD.
             </p>
+            <Image src={ex4} alt="" width="900" height="200"></Image>
             <Spoiler buttonLabel="Valider votre réponse">
                 <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo2/ex4">
                 </CodeSubmission>
@@ -70,22 +80,12 @@ export default function Page() {
         <section>
             <h2>Exercice 5</h2>
             <p>
-                US to CAD
+                Écrire un programme qui calcul le montant du pourboire à donner à un serveur. Le programme doit demander le montant de la facture
+                et le pourcentage du pourboire à donner. Le programme doit ensuite afficher le montant du pourboire à donner.
             </p>
+            <Image src={ex5} alt="" width="900" height="200"></Image>
             <Spoiler buttonLabel="Valider votre réponse">
                 <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo2/ex5">
-                </CodeSubmission>
-            </Spoiler>
-        </section>
-
-        <section>
-            <h2>Exercice 6</h2>
-            <p>
-                Le programme suivant contient 3 erreurs, identifiez les
-                et corrigez les pour que le programme fonctionne correctement.
-            </p>
-            <Spoiler buttonLabel="Valider votre réponse">
-                <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo2/ex6">
                 </CodeSubmission>
             </Spoiler>
         </section>
