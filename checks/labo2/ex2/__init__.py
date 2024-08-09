@@ -9,6 +9,7 @@ def test1426():
     .stdout(r'26', "Première variable après permutation : a = 26\n") \
     .stdout(r'14', "Deuxième variable après permutation : b = 14\n").exit(0)
 
+@check50.check()
 def test5620():
     """Permutation de 56.2 et 20.4"""
     check50.run("python3 test.py").stdin("56.2", prompt=True).stdin("20.4", prompt=True) \
