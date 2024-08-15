@@ -41,7 +41,7 @@ export default function Page() {
             </p>
             <Image src={ex2} alt="" width="900" height="250"></Image>
             <Spoiler buttonLabel="Valider votre réponse">
-                <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo2/ex2">
+                <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo3/ex2">
                 </CodeSubmission>
             </Spoiler>
         </section>
