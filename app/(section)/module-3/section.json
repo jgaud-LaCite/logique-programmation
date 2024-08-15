@@ -1,0 +1,10 @@
+{
+    "title": "Module 3",
+    "description": "Opérations sur les chaînes de caractères, notions de fonctions et de modules.",
+    "pages": [
+        "chaines",
+        "fonctions",
+        "modules",
+        "erreurs"
+    ]
+}

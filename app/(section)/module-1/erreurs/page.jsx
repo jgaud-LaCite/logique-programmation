@@ -1,4 +1,3 @@
-import IC from '@/components/InlineCode';
 import CodeBlock from '@/components/CodeBlock';
 
 /**
@@ -28,8 +27,8 @@ export default function Page() {
     return <>
         <section>
             <p>
-                En programmation, il est très fréquent de rencontrer des erreurs, il est donc important de vous familiariser avec celles-ci
-                dès le début. Par exemple, essayez d&apos;exécuter le code suivant:
+                En programmation, il est très fréquent de rencontrer des erreurs, bien que nous verrons les erreurs en plus amples détails 
+                dans un module futur, il est important de vous familiariser avec celles-ci dès le début. Par exemple, essayez d&apos;exécuter le code suivant:
             </p>
             <CodeBlock language="python">
                 {multiLineError}

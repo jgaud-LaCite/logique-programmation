@@ -21,16 +21,16 @@ export default function Page() {
                 Si ce n&apos;est pas le cas, veuillez le faire avant de continuer.
         </ColoredBox>
 
-        <section>
-            <p>
-                Une fois Python installé, il existe plusieurs façons d&apos;exécuter votre code. Spécifiquement, 
-                vous pouvez exécuter le programme en le tapant directement dans la console de votre système d&apos;exploitation
-                ligne par ligne. Cependant, lorsque nous aurons des programmes plus complexes, nous allons plutôt les écrire dans un fichier
-                puisque cela est plus pratique. Un programme peut également être exécuté à partir de plusieurs fichiers.
-                Nous verrons plus tard qu&apos;il est également possible d&apos;exécuter du code Python de d&apos;autre manières, par exemple
-                à l&apos;intérieur d&apos;un <a target="_blank" rel="noopener noreferrer" href="https://jupyter.org/">Jupyter Notebook</a>.
-            </p>
+        <p>
+            Une fois Python installé, il existe plusieurs façons d&apos;exécuter votre code. Spécifiquement, 
+            vous pouvez exécuter le programme en le tapant directement dans la console de votre système d&apos;exploitation
+            ligne par ligne. Cependant, lorsque nous aurons des programmes plus complexes, nous allons plutôt les écrire dans un fichier
+            puisque cela est plus pratique. Un programme peut également être exécuté à partir de plusieurs fichiers.
+            Nous verrons plus tard qu&apos;il est également possible d&apos;exécuter du code Python de d&apos;autre manières, par exemple
+            à l&apos;intérieur d&apos;un <a target="_blank" rel="noopener noreferrer" href="https://jupyter.org/">Jupyter Notebook</a>.
+        </p>
 
+        <section>
             <h2>Exécution sur la console</h2>
             <p>
                 Pour exécuter du code Python, il suffit d&apos;ouvrir un terminal et d&apos;exécuter la commande <IC>python</IC>. 
@@ -44,7 +44,8 @@ export default function Page() {
                 complexes ou pour exécuter du code à plusieurs reprises. Pour quitter l&apos;interpréteur Python, vous pouvez taper la commande <IC>exit()</IC>.
             </p>
 
-
+        </section>
+        <section>
             <h2>Exécution à partir d&apos;un fichier</h2>
             <p>
                 C&apos;est la méthode que nous allons utiliser pour la suite du cours. Le code Python est stocké dans un fichier avec l&apos;extension <IC>.py</IC>.
