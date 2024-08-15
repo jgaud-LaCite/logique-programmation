@@ -1,13 +1,13 @@
 import Spoiler from "@/components/Spoiler";
 import CodeSubmission from "@/components/CodeSubmission";
+import CodeBlock from '@/components/CodeBlock';
+import IC from '@/components/InlineCode';
 import Image from 'next/image';
 
 
 import ex1 from '@/public/img/labo3/ex1.png';
 import ex2 from '@/public/img/labo3/ex2.png';
-import ex3 from '@/public/img/labo2/ex3.png';
-import ex4 from '@/public/img/labo2/ex4.png';
-import ex5 from '@/public/img/labo2/ex5.png';
+import ex3 from '@/public/img/labo3/ex3.png';
 
 /**
  * @type {import("next").Metadata}
@@ -19,13 +19,32 @@ export const metadata = {
     group: "labs"
 }
 
+const ex3Code = 
+`def main():
+    dollars = dollars_to_float(input("Combien était votre repas? "))
+    percent = percent_to_float(input("Quel pourcentage voulez-vous donner? "))
+    tip = dollars * percent
+    print(f"Laisser {tip:.2f}$")
+
+
+def dollars_to_float(d):
+    # TODO
+
+
+def percent_to_float(p):
+    # TODO
+
+
+main()
+`
+
 
 export default function Page() {
     return <>
         <section>
             <h2>Exercice 1</h2>
             <p>
-                Écrire un programme qui prend une entrée de l'usager, puis imprime cette chaîne de caractères en minuscules.
+                Écrire un programme qui prend une entrée de l&apos;usager, puis imprime cette chaîne de caractères en minuscules.
             </p>
             <Image src={ex1} alt="" width="900" height="250"></Image>
             <Spoiler buttonLabel="Valider votre réponse">
@@ -37,11 +56,26 @@ export default function Page() {
         <section>
             <h2>Exercice 2</h2>
             <p>
-                Écrire un programme qui prend une entrée de l'usager, puis remplace tout les espaces dans la chaîne de caractères par trois points (...).
+                Écrire un programme qui prend une entrée de l&apos;usager, puis remplace tout les espaces dans la chaîne de caractères par trois points (...).
             </p>
             <Image src={ex2} alt="" width="900" height="250"></Image>
             <Spoiler buttonLabel="Valider votre réponse">
                 <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo3/ex2">
+                </CodeSubmission>
+            </Spoiler>
+        </section>
+
+        <section>
+            <h2>Exercice 3</h2>
+            <p>
+                À partir du programme ci-dessous, recréer le programme permettant de calculer le montant de pourboire à donner à un serveur. Vous devez compléter les fonctions <IC>dollars_to_float</IC> et <IC>percent_to_float</IC> avec votre code.
+            </p>
+            <CodeBlock language="python">
+                {ex3Code}
+            </CodeBlock>
+            <Image src={ex3} alt="" width="900" height="250"></Image>
+            <Spoiler buttonLabel="Valider votre réponse">
+                <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo3/ex3">
                 </CodeSubmission>
             </Spoiler>
         </section>

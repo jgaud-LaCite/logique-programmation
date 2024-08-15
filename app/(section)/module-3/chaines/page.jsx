@@ -11,14 +11,14 @@ export const metadata = {
     group: "notes",
 }
 
-export const concat =
+const concat =
 `a = "Hello"
 b = "World"
 c = a + b
 print(c) # Imprime: "HelloWorld"
 `;
 
-export const indexing =
+const indexing =
 `a = "Hello"
 print(a[0]) # Imprime: "H"
 print(a[1]) # Imprime: "e"
@@ -27,14 +27,14 @@ print(a[3]) # Imprime: "l"
 print(a[4]) # Imprime: "o"
 `;
 
-export const slicing =
+const slicing =
 `a = "Hello"
 print(a[1:4]) # Imprime: "ell"
 print(a[2:]) # Imprime: "llo"
 print(a[:3]) # Imprime: "Hel"
 `;
 
-export const methods =
+const methods =
 `a = " hello"
 print(a.strip()) # Imprime: "hello"
 print(a.title()) # Imprime: " Hello"

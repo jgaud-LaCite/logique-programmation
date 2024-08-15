@@ -12,7 +12,7 @@ export const metadata = {
     group: "notes",
 }
 
-export const function_with_return =
+const function_with_return =
 `def add(a, b):
     return a + b
 
@@ -20,17 +20,17 @@ result = add(3, 5)
 print(result) # Imprime: 8
 `
 
-export const import_module =
+const import_module =
 `import mathematique
 print(add(2,4))
 `
 
-export const import_module_as =
+const import_module_as =
 `import mathematique as ma
 print(ma.add(2,4))
 `
 
-export const import_module_from =
+const import_module_from =
 `from mathematique import add
 print(add(2,4))
 `

@@ -10,12 +10,12 @@ export const metadata = {
     group: "notes",
 }
 
-export const definition =
+const definition =
 `def print_welcome():
     print("Bonjour d'une fonction")
 `;
 
-export const definition_call =
+const definition_call =
 `def print_welcome():
     print("Bonjour d'une fonction")
     print("Ce code est toujours à l'intérieur de la fonction")
@@ -23,14 +23,14 @@ export const definition_call =
 print_welcome() # Imprime: "Bonjour d'une fonction"
 `
 
-export const function_with_argument =
+const function_with_argument =
 `def print_name(name):
     print("Bonjour " + name)
 
 print_name("Alice") # Imprime: "Bonjour Alice"
 `
 
-export const function_with_return =
+const function_with_return =
 `def add(a, b):
     return a + b
 
