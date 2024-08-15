@@ -8,6 +8,7 @@ import Image from 'next/image';
 import ex1 from '@/public/img/labo3/ex1.png';
 import ex2 from '@/public/img/labo3/ex2.png';
 import ex3 from '@/public/img/labo3/ex3.png';
+import ex4 from '@/public/img/labo3/ex4.png';
 
 /**
  * @type {import("next").Metadata}
@@ -76,6 +77,22 @@ export default function Page() {
             <Image src={ex3} alt="" width="900" height="250"></Image>
             <Spoiler buttonLabel="Valider votre réponse">
                 <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo3/ex3">
+                </CodeSubmission>
+            </Spoiler>
+        </section>
+        
+        <section>
+            <h2>Exercice 4</h2>
+            <p>
+                Écrire un programme qui calcule et affiche la distance DIST entre deux points A et B du plan dont les coordonnées (XA, YA) et (XB, YB) sont entrées au clavier comme entiers.
+                La distance entre deux points est donnée par la formule suivante: <IC>D = RACINE CARRE ((XA-XB) * (XA-XB) + (YA-YB) * (YA-YB))</IC>
+            </p>
+            <p>
+                <strong>Note</strong>: Il est possible que vous devez fouiller un peu pour trouver la fonction qui permet de calculer la racine carrée. N&apos;oubliez pas de consulter la documentation de Python.
+            </p>
+            <Image src={ex4} alt="" width="900" height="250"></Image>
+            <Spoiler buttonLabel="Valider votre réponse">
+                <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo3/ex4">
                 </CodeSubmission>
             </Spoiler>
         </section>
