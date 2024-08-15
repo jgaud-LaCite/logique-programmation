@@ -115,7 +115,8 @@ export default function Page() {
                 <li><IC>upper</IC>: Cette méthode est utilisée pour mettre toute la chaîne de caractères en majuscules.</li>
             </ul>
             <p>
-                Voici un exemple d&apos;utilisation de ces méthodes:
+                Contrairement à la fonction <IC>print</IC> que nous avons vue précédemment, ces méthodes sont appelées sur une chaîne de caractères en utilisant la notation <IC>nom_de_variable.methode()</IC>.
+                C&apos;est la principale différence entre les fonctions et les méthodes. Voici un exemple d&apos;utilisation de ces méthodes:
             </p>
             <CodeBlock language="python">
                 {methods}
@@ -125,9 +126,6 @@ export default function Page() {
                 Il est important de vous familiariser avec l&apos;usage de la documentation dès le début de votre apprentissage de Python, car elle contient des informations précieuses sur les fonctions et les méthodes que vous utiliserez.
                 Il est impossible de vous montrez et de connaître toutes les méthodes disponibles, la documentation vous servira donc tout au long de votre carrière de programmeur.
             </p>
-        </section>
-        <section>
-            String methods (strip, title, https://docs.python.org/fr/3/library/stdtypes.html#string-methods)
         </section>
     </>;
 }
