@@ -1,0 +1,11 @@
+{
+    "title": "Module 4",
+    "description": "Structures conditionnelles.",
+    "pages": [
+        "boolean",
+        "if",
+        "else",
+        "elif",
+        "avance"
+    ]
+}
