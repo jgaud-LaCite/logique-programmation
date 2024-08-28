@@ -52,7 +52,7 @@ export default function Page() {
         <CodeBlock language='python'>
             {exercice3}
         </CodeBlock>
-        <Spoiler buttonLabel="Valider votre réponse">
+        <Spoiler label="Valider votre réponse" border={false}>
             <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo1/ex3">
             </CodeSubmission>
         </Spoiler>

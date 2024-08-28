@@ -1,28 +1,25 @@
-'use client';
+'use client'
+
+import { useState } from 'react';
+import AnimateHeight from 'react-animate-height';
 
 import styles from './Spoiler.module.css';
-import { useState } from 'react';
 
+export default function Spoiler({children, label='Voir / Cacher', border=true}) {
+    const [height, setHeight] = useState(0);
 
-const Spoiler = ({ children, buttonLabel = "Voir/Cacher" }) => {
-    const [isVisible, setIsVisible] = useState(false);
-  
-    const toggleVisibility = () => {
-      setIsVisible(!isVisible);
+    const toggleHeight = () => {
+        setHeight(height === 0 ? 'auto' : 0);
     };
-  
-    return (
-      <div>
-        <button className={isVisible ? styles.spoilerButtonShown : styles.spoilerButtonHidden} onClick={toggleVisibility}>
-          {buttonLabel}
+
+    return <div className={styles.spoiler}>
+        <button className={styles.button + (height === 0 ? ' ' + styles.hidden : '')} onClick={toggleHeight}>
+            {label}
         </button>
-        {isVisible && (
-          <div className={styles.spoilerContainer}>
-            {children}
-          </div>
-        )}
-      </div>
-    );
-  };
-  
-  export default Spoiler;
+        <AnimateHeight height={height} duration={300} animateOpacity={true}>
+            <div className={styles.container + (!border ? ' ' + styles['no-border'] : '')}>
+                {children}
+            </div>
+        </AnimateHeight>
+    </div>
+};

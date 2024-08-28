@@ -48,7 +48,7 @@ export default function Page() {
                 Écrire un programme qui prend une entrée de l&apos;usager, puis imprime cette chaîne de caractères en minuscules.
             </p>
             <Image src={ex1} alt="" width="900" height="250"></Image>
-            <Spoiler buttonLabel="Valider votre réponse">
+            <Spoiler label="Valider votre réponse" border={false}>
                 <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo3/ex1">
                 </CodeSubmission>
             </Spoiler>
@@ -60,7 +60,7 @@ export default function Page() {
                 Écrire un programme qui prend une entrée de l&apos;usager, puis remplace tout les espaces dans la chaîne de caractères par trois points (...).
             </p>
             <Image src={ex2} alt="" width="900" height="250"></Image>
-            <Spoiler buttonLabel="Valider votre réponse">
+            <Spoiler label="Valider votre réponse" border={false}>
                 <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo3/ex2">
                 </CodeSubmission>
             </Spoiler>
@@ -75,7 +75,7 @@ export default function Page() {
                 {ex3Code}
             </CodeBlock>
             <Image src={ex3} alt="" width="900" height="250"></Image>
-            <Spoiler buttonLabel="Valider votre réponse">
+            <Spoiler label="Valider votre réponse" border={false}>
                 <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo3/ex3">
                 </CodeSubmission>
             </Spoiler>
@@ -91,7 +91,7 @@ export default function Page() {
                 <strong>Note</strong>: Il est possible que vous devez fouiller un peu pour trouver la fonction qui permet de calculer la racine carrée. N&apos;oubliez pas de consulter la documentation de Python.
             </p>
             <Image src={ex4} alt="" width="900" height="250"></Image>
-            <Spoiler buttonLabel="Valider votre réponse">
+            <Spoiler label="Valider votre réponse" border={false}>
                 <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo3/ex4">
                 </CodeSubmission>
             </Spoiler>

@@ -29,7 +29,7 @@ export default function Page() {
                 sachant que les taxes sont de 13%.
             </p>
             <Image src={ex1} alt="" width="900" height="200"></Image>
-            <Spoiler buttonLabel="Valider votre réponse">
+            <Spoiler label="Valider votre réponse" border={false}>
                 <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo2/ex1">
                 </CodeSubmission>
             </Spoiler>
@@ -41,7 +41,7 @@ export default function Page() {
                 Écrire un programme qui permet de permuter deux variables entières saisis au clavier.
             </p>
             <Image src={ex2} alt="" width="900" height="200"></Image>
-            <Spoiler buttonLabel="Valider votre réponse">
+            <Spoiler label="Valider votre réponse" border={false}>
                 <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo2/ex2">
                 </CodeSubmission>
             </Spoiler>
@@ -58,7 +58,7 @@ export default function Page() {
                 π est une constante égale à 3.1416.
             </p>
             <Image src={ex3} alt="" width="900" height="200"></Image>
-            <Spoiler buttonLabel="Valider votre réponse">
+            <Spoiler label="Valider votre réponse" border={false}>
                 <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo2/ex3">
                 </CodeSubmission>
             </Spoiler>
@@ -71,7 +71,7 @@ export default function Page() {
                 équivaut à environ 1.35 dollar CAD.
             </p>
             <Image src={ex4} alt="" width="900" height="200"></Image>
-            <Spoiler buttonLabel="Valider votre réponse">
+            <Spoiler label="Valider votre réponse" border={false}>
                 <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo2/ex4">
                 </CodeSubmission>
             </Spoiler>
@@ -84,7 +84,7 @@ export default function Page() {
                 et le pourcentage du pourboire à donner. Le programme doit ensuite afficher le montant du pourboire à donner.
             </p>
             <Image src={ex5} alt="" width="900" height="200"></Image>
-            <Spoiler buttonLabel="Valider votre réponse">
+            <Spoiler label="Valider votre réponse" border={false}>
                 <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo2/ex5">
                 </CodeSubmission>
             </Spoiler>
