@@ -1,0 +1,9 @@
+{
+    "title": "Module 8",
+    "description": "Notions de fonctions, écriture procédurale.",
+    "disabled": true,
+    "pages": [
+        "fonctions",
+        "lab8-exercices"
+    ]
+}

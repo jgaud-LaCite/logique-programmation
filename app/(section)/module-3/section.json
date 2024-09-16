@@ -1,9 +1,8 @@
 {
     "title": "Module 3",
-    "description": "Opérations sur les chaînes de caractères, notions de fonctions et de modules.",
+    "description": "Opérations sur les chaînes de caractères, notions de modules.",
     "pages": [
         "chaines",
-        "fonctions",
         "modules",
         "erreurs",
         "lab3-exercices"

@@ -1,16 +1,19 @@
 import check50
 
 @check50.check()
-def test50():
-    """Une entrée de $50.00 et 15% donne $7.50"""
-    check50.run("python3 test.py").stdin("50.00", prompt=True).stdin("15%", prompt=True).stdout('7.50', 'Laisser 7.50$\n').exit()
+def test8246():
+    """Une entrée de 8,2,4 et 6 devrait donner une sortie de 5.65..."""
+    check50.run("python3 test.py").stdin("8", prompt=True) \
+    .stdin("2", prompt=True) \
+    .stdin("4", prompt=True) \
+    .stdin("6", prompt=True) \
+    .stdout("5.65", "La distance entre les points A et B est : 5.65\n").exit(0)
 
 @check50.check()
-def test100():
-    """Une entrée de $100.00 et 18% donne $18.00"""
-    check50.run("python3 test.py").stdin("100.00", prompt=True).stdin("18%", prompt=True).stdout('18.00', 'Laisser 18.00$\n').exit()
-
-@check50.check()
-def test15():
-    """Une entrée de $15.00 et 25% donne $3.75"""
-    check50.run("python3 test.py").stdin("15.00", prompt=True).stdin("25%", prompt=True).stdout('3.75', 'Laisser 3.75$\n').exit()
+def test9145():
+    """Une entrée de 9,1,4 et 5 devrait donner une sortie de 6.40..."""
+    check50.run("python3 test.py").stdin("9", prompt=True) \
+    .stdin("1", prompt=True) \
+    .stdin("4", prompt=True) \
+    .stdin("5", prompt=True) \
+    .stdout("6.40", "La distance entre les points A et B est : 6.40\n").exit(0)

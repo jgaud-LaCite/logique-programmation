@@ -8,7 +8,6 @@ import Image from 'next/image';
 import ex1 from '@/public/img/labo3/ex1.png';
 import ex2 from '@/public/img/labo3/ex2.png';
 import ex3 from '@/public/img/labo3/ex3.png';
-import ex4 from '@/public/img/labo3/ex4.png';
 
 /**
  * @type {import("next").Metadata}
@@ -65,24 +64,9 @@ export default function Page() {
                 </CodeSubmission>
             </Spoiler>
         </section>
-
-        <section>
-            <h2>Exercice 3</h2>
-            <p>
-                À partir du programme ci-dessous, recréer le programme permettant de calculer le montant de pourboire à donner à un serveur. Vous devez compléter les fonctions <IC>dollars_to_float</IC> et <IC>percent_to_float</IC> avec votre code.
-            </p>
-            <CodeBlock language="python">
-                {ex3Code}
-            </CodeBlock>
-            <Image src={ex3} alt="" width="900" height="250"></Image>
-            <Spoiler label="Valider votre réponse" border={false}>
-                <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo3/ex3">
-                </CodeSubmission>
-            </Spoiler>
-        </section>
         
         <section>
-            <h2>Exercice 4</h2>
+            <h2>Exercice 3</h2>
             <p>
                 Écrire un programme qui calcule et affiche la distance DIST entre deux points A et B du plan dont les coordonnées (XA, YA) et (XB, YB) sont entrées au clavier comme entiers.
                 La distance entre deux points est donnée par la formule suivante: <IC>D = RACINE CARRE ((XA-XB) * (XA-XB) + (YA-YB) * (YA-YB))</IC>
@@ -90,9 +74,9 @@ export default function Page() {
             <p>
                 <strong>Note</strong>: Il est possible que vous devez fouiller un peu pour trouver la fonction qui permet de calculer la racine carrée. N&apos;oubliez pas de consulter la documentation de Python.
             </p>
-            <Image src={ex4} alt="" width="900" height="250"></Image>
+            <Image src={ex3} alt="" width="900" height="250"></Image>
             <Spoiler label="Valider votre réponse" border={false}>
-                <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo3/ex4">
+                <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo3/ex3">
                 </CodeSubmission>
             </Spoiler>
         </section>

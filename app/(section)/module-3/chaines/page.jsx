@@ -43,6 +43,9 @@ print(a.upper()) # Imprime: " HELLO"
 
 # On peut combiner les méthodes
 print(a.strip().title()) # Imprime: "Hello"
+
+b = "elle"
+print(b.replace("e", "o")) # Imprime: "ollo"
 `;
 
 export default function Page() {
@@ -113,6 +116,7 @@ export default function Page() {
                 <li><IC>title</IC>: Cette méthode est utilisée pour mettre en majuscule la première lettre de chaque mot dans une chaîne de caractères.</li>
                 <li><IC>lower</IC>: Cette méthode est utilisée pour mettre toute la chaîne de caractères en minuscules.</li>
                 <li><IC>upper</IC>: Cette méthode est utilisée pour mettre toute la chaîne de caractères en majuscules.</li>
+                <li><IC>replace</IC>: Cette méthode est utilisée pour remplacer une sous-chaîne par une autre sous-chaîne dans une chaîne de caractères. Elle prend deux arguments: la sous-chaîne à remplacer et la sous-chaîne de remplacement.</li>
             </ul>
             <p>
                 Contrairement à la fonction <IC>print</IC> que nous avons vue précédemment, ces méthodes sont appelées sur une chaîne de caractères en utilisant la notation <IC>nom_de_variable.methode()</IC>.
