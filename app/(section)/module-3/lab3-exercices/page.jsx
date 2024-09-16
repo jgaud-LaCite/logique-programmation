@@ -8,6 +8,7 @@ import Image from 'next/image';
 import ex1 from '@/public/img/labo3/ex1.png';
 import ex2 from '@/public/img/labo3/ex2.png';
 import ex3 from '@/public/img/labo3/ex3.png';
+import ex4 from '@/public/img/labo3/ex4.png';
 
 /**
  * @type {import("next").Metadata}
@@ -18,26 +19,6 @@ export const metadata = {
     keywords: ["programmes simples", "programme simple", "fonctions", "opérateurs", "chaines", "caractères", "str", "string", "module", "import"],
     group: "labs"
 }
-
-const ex3Code = 
-`def main():
-    dollars = dollars_to_float(input("Combien était votre repas? "))
-    percent = percent_to_float(input("Quel pourcentage voulez-vous donner? "))
-    tip = dollars * percent
-    print(f"Laisser {tip:.2f}$")
-
-
-def dollars_to_float(d):
-    # TODO
-
-
-def percent_to_float(p):
-    # TODO
-
-
-main()
-`
-
 
 export default function Page() {
     return <>
@@ -56,7 +37,8 @@ export default function Page() {
         <section>
             <h2>Exercice 2</h2>
             <p>
-                Écrire un programme qui prend une entrée de l&apos;usager, puis remplace tout les espaces dans la chaîne de caractères par trois points (...).
+                Écrire un programme qui prend une entrée de l&apos;usager, puis remplace tout les espaces dans la chaîne de caractères par trois points (...). Ensuite,
+                le programme remplace la première lettre de la chaîne par la deuxième. 
             </p>
             <Image src={ex2} alt="" width="900" height="250"></Image>
             <Spoiler label="Valider votre réponse" border={false}>
@@ -77,6 +59,18 @@ export default function Page() {
             <Image src={ex3} alt="" width="900" height="250"></Image>
             <Spoiler label="Valider votre réponse" border={false}>
                 <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo3/ex3">
+                </CodeSubmission>
+            </Spoiler>
+        </section>
+
+        <section>
+            <h2>Exercice 4</h2>
+            <p>
+                Écrire un programme qui demande à l&apos;usager d'entrer un nom de fichier et ensuite imprime le nom du fichier avec l&apos;extension .py. Par la suite, le programme imprime les quatre dernier caractères du nom du fichier, puis les trois premiers caractères.
+            </p>
+            <Image src={ex4} alt="" width="900" height="250"></Image>
+            <Spoiler label="Valider votre réponse" border={false}>
+                <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo3/ex4">
                 </CodeSubmission>
             </Spoiler>
         </section>
