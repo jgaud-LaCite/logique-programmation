@@ -19,6 +19,27 @@ somme = add(3, 5)
 print(somme) # Imprime: 8
 `
 
+const function_return_multiple_values =
+`def get_info():
+    nom = "Alice"
+    age = 25
+    return nom, age
+
+nom, age = get_info()
+print(nom) # Imprime: Alice
+print(age) # Imprime: 25
+`
+
+const function_return_multiple_values_underscore =
+`def get_info():
+    nom = "Alice"
+    age = 25
+    return nom, age
+
+nom, _ = get_info() # Ignorer l'âge
+print(nom) # Imprime: Alice
+`
+
 export default function Page() {
     return <>
         <p>
@@ -34,9 +55,18 @@ export default function Page() {
 
         <h2>Retourner plusieurs valeurs</h2>
         <p>
-            En Python, une fonction ne peut retourner qu&apos;une seule valeur. Cependant, vous pouvez retourner plusieurs valeurs en les regroupant dans un tuple, une autre structure de données ou bien un générateur. Nous verrons comment faire cela dans une section ultérieure.
+            En Python, une fonction peut retourner plusieurs valeurs en les séparant par des virgules. Par exemple:
         </p>
+        <CodeBlock language="python">
+            {function_return_multiple_values}
+        </CodeBlock>
 
+        <p>
+            Dans cet exemple, la fonction <IC>get_info()</IC> retourne deux valeurs: le nom et l&apos;âge. Lorsque vous appelez la fonction <IC>get_info()</IC>, vous pouvez stocker les valeurs retournées dans deux variables <IC>nom</IC> et <IC>age</IC>. Il est également possible de "jeter" une des valeurs retournées si vous n&apos;en avez pas besoin en utilisant un underscore <IC>_</IC> comme nom de variable. Par exemple:
+        </p>
         
+        <CodeBlock language="python">
+            {function_return_multiple_values_underscore}
+        </CodeBlock>
     </>;
 }
