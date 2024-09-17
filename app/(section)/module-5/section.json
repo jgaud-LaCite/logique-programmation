@@ -1,7 +1,11 @@
 {
     "title": "Module 5",
-    "description": "Structures répétitives",
-    "disabled": true,
+    "description": "Structures conditionnelles.",
     "pages": [
+        "boolean",
+        "if",
+        "else",
+        "elif",
+        "avance"
     ]
 }

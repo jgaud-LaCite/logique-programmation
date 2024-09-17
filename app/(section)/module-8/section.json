@@ -1,9 +1,7 @@
 {
     "title": "Module 8",
-    "description": "Notions de fonctions, écriture procédurale.",
+    "description": "Autres structures de données",
     "disabled": true,
     "pages": [
-        "fonctions",
-        "lab8-exercices"
     ]
 }

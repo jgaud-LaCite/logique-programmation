@@ -4,7 +4,7 @@ import IC from '@/components/InlineCode';
  * @type {import("next").Metadata}
  */
 export const metadata = {
-    title: "Fonctions",
+    title: "Introduction aux fonctions",
     description: "Notions de base sur les fonctions en Python.",
     keywords: ["fonctions", "python", "def", "fonction"],
     group: "notes",
@@ -23,19 +23,13 @@ const definition_call =
 print_welcome() # Imprime: "Bonjour d'une fonction"
 `
 
-const function_with_argument =
-`def print_name(name):
-    print("Bonjour " + name)
+const scope =
+`def print_welcome():
+    message = "Bonjour d'une fonction"
+    print(message)
 
-print_name("Alice") # Imprime: "Bonjour Alice"
-`
-
-const function_with_return =
-`def add(a, b):
-    return a + b
-
-result = add(3, 5)
-print(result) # Imprime: 8
+print_welcome()
+print(message) # Erreur: NameError: name 'message' is not defined
 `
 
 export default function Page() {
@@ -79,33 +73,14 @@ export default function Page() {
         </section>
 
         <section>
-            <h2>Arguments et retour</h2>
-            <h3>Arguments</h3>
+            <h2>Portée des variables</h2>
             <p>
-                Comme la fonction <IC>print()</IC>, les fonctions peuvent également prendre des arguments. Les arguments sont des valeurs que vous pouvez passer à une fonction pour qu&apos;elle les utilise. Les arguments sont placés entre les parenthèses lors de la définition de la fonction. 
-                Les arguments sont placés entre les parenthèses lors de la définition de la fonction. Voici un exemple de fonction qui prend un argument:
-            </p>
-            <CodeBlock language="python">
-                {function_with_argument}
-            </CodeBlock>
-            <p>
-                Dans cet exemple, la fonction <IC>print_name()</IC> prend un argument appelé <IC>name</IC>. Lorsque vous appelez la fonction
-                <IC>print_name(&quot;Alice&quot;)</IC>, la valeur <IC>&quot;Alice&quot;</IC> est passée à la fonction et stockée dans la variable <IC>name</IC>. La fonction imprime ensuite <IC>Bonjour Alice</IC>.
+                Les variables déclarées à l&apos;intérieur d&apos;un bloc de code indenté sont accessibles uniquement dans ce bloc de code (comme avec les fonctions et les structures de contrôle que nous verrons prochainement). Les variables déclarées en dehors d&apos;une fonction sont appelées variables globales. Les variables globales sont accessibles de partout dans votre code, y compris à l&apos;intérieur des fonctions. Voici un exemple pour illustrer la portée des variables:
             </p>
 
-            <h3>Retour</h3>
-            <p>
-                Les fonctions peuvent également retourner des valeurs. Pour retourner une valeur à partir d&apos;une fonction, vous pouvez utiliser le mot-clé <IC>return</IC>.
-                Par exemple, la fonction suivante nous permet de calculer la somme de deux nombres et de retourner le résultat:
-            </p>
             <CodeBlock language="python">
-                {function_with_return}
+                {scope}
             </CodeBlock>
-            <p>
-                Dans cet exemple, la fonction <IC>add()</IC> prend deux arguments <IC>a</IC> et <IC>b</IC>, les ajoute ensemble et retourne le résultat. Lorsque vous appelez la fonction <IC>add(3, 5)</IC>, elle retourne la valeur <IC>8</IC>.
-                Vous pouvez stocker la valeur retournée dans une variable et l&apos;utiliser plus tard dans votre code.
-            </p>
-
         </section>
     </>;
 }

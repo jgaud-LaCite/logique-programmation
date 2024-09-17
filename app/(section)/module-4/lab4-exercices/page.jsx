@@ -5,13 +5,13 @@ import IC from '@/components/InlineCode';
 import Image from 'next/image';
 
 
-import ex1 from '@/public/img/labo8/ex1.png';
+import ex1 from '@/public/img/labo4/ex1.png';
 
 /**
  * @type {import("next").Metadata}
  */
 export const metadata = {
-    title: "Laboratoire 8 - Exercices",
+    title: "Laboratoire 4 - Exercices",
     description: "Présentation du laboratoire.",
     keywords: ["fonctions", "retour", "paramètres", "exercices"],
     group: "labs"
@@ -49,7 +49,7 @@ export default function Page() {
             </CodeBlock>
             <Image src={ex1} alt="" width="900" height="250"></Image>
             <Spoiler label="Valider votre réponse" border={false}>
-                <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo8/ex1">
+                <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo4/ex1">
                 </CodeSubmission>
             </Spoiler>
         </section>

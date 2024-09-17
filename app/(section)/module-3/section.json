@@ -1,6 +1,6 @@
 {
     "title": "Module 3",
-    "description": "Opérations sur les chaînes de caractères, notions de modules.",
+    "description": "Opérations sur les chaînes de caractères et utilisation de modules existants.",
     "pages": [
         "chaines",
         "modules",

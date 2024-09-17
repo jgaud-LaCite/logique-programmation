@@ -6,7 +6,7 @@ import ColoredBox from '@/components/ColoredBox'
  * @type {import("next").Metadata}
  */
 export const metadata = {
-    title: "Modules",
+    title: "Importer des modules existants",
     description: "Notions de base sur les modules en Python.",
     keywords: ["modules", "python", "import", "from"],
     group: "notes",
@@ -30,15 +30,9 @@ print(log(16)) # calcule le logarithme de 16
 export default function Page() {
     return <>
     <p>
-        Jusqu'à présent, nous avons utiliser plusieurs fonctions et méthodes de Python telles que les fonctions <IC>print</IC>, <IC>input</IC> et les méthodes des types de données intégrés comme <IC>upper</IC> ou <IC>replace</IC> pour les chaînes de caractères. Toutes ces fonctions et méthodes sont définies dans les librairies de base de Python, nous n'avons donc pas à les importer puisqu'elles sont disponibles par défaut. L'un des avantages de Python est qu'il y a plusieurs bibliothèques et modules disponibles pour étendre les fonctionnalités de base de Python. Dans cette section, nous allons voir comment utiliser des modules en Python. Plus tard, nous verrons même comment créer nos propres modules.
+        Jusqu'à présent, nous avons utiliser plusieurs fonctions et méthodes de Python telles que les fonctions <IC>print</IC>, <IC>input</IC> et les méthodes des types de données intégrés comme <IC>upper</IC> ou <IC>replace</IC> pour les chaînes de caractères. Toutes ces fonctions et méthodes sont définies dans les librairies de base de Python, nous n'avons donc pas à les importer puisqu'elles sont disponibles par défaut. L'un des avantages de Python est qu'il y a plusieurs bibliothèques et modules disponibles pour étendre les fonctionnalités de base de Python. Dans cette section, nous allons voir comment utiliser des modules déjà existants en Python. Plus tard, nous verrons même comment créer nos propres modules.
     </p>
     
-    <p>
-        Un module est un fichier contenant des définitions et des instructions Python. Le nom du fichier est le nom du module avec l&apos;extension <IC>.py</IC>. Un module peut définir des fonctions, des classes et des variables. Un module peut également inclure du code exécutable.
-        C&apos;est une façon de structurer votre code en le divisant en plusieurs fichiers. Cela rend le code plus lisible et plus facile à maintenir. Par exemple, un fichier pourrait contenir des fonctions liées aux mathématiques, un autre fichier pourrait contenir des fonctions liées à la manipulation de fichiers, etc.
-    </p>
-
-
     <section>
         <h2>Importer un module</h2>
         <p>

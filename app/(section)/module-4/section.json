@@ -1,11 +1,11 @@
 {
     "title": "Module 4",
-    "description": "Structures conditionnelles.",
+    "description": "Notions de fonctions et création de modules.",
     "pages": [
-        "boolean",
-        "if",
-        "else",
-        "elif",
-        "avance"
+        "fonctions",
+        "arguments-parametres",
+        "retour-valeurs",
+        "modules",
+        "lab4-exercices"
     ]
 }
