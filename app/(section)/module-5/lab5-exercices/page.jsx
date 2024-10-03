@@ -38,18 +38,19 @@ export default function Page() {
             <h2>Exercice 2</h2>
             <p>
                 Écrire un programme qui permet de saisir un entier n, on suppose qu’il est formé de deux chiffres différents de 0, et indique s’il est : valide partiel, non valide partiel ou valide total.
-                <ul>
-                    <li>Un nombre n est dit valide partiel s’il est multiple de l’un des chiffres qui le composent.</li>
-                    <li>Un nombre n est dit valide total s’il est multiple des deux chiffres qui le composent.</li>
-                </ul>
-
-                Exemple:
-                <ul>
-                    <li>52 est un nombre valide partiel car 52 est divisible par 2 et n’est pas divisible par 5.</li>
-                    <li>48 est un nombre valide total car 48 est divisible par 4 et par 8.</li>
-                    <li>27 est un nombre non valide Total et non valide partiel car 27 n’est pas divisible par 2 et n’est pas divisible par 7.</li>
-                </ul>
             </p>
+            <ul>
+                <li>Un nombre n est dit valide partiel s’il est multiple de l’un des chiffres qui le composent.</li>
+                <li>Un nombre n est dit valide total s’il est multiple des deux chiffres qui le composent.</li>
+            </ul>
+            <p>
+                Exemple :
+            </p>
+            <ul>
+                <li>52 est un nombre valide partiel car 52 est divisible par 2 et n’est pas divisible par 5.</li>
+                <li>48 est un nombre valide total car 48 est divisible par 4 et par 8.</li>
+                <li>27 est un nombre non valide Total et non valide partiel car 27 n’est pas divisible par 2 et n’est pas divisible par 7.</li>
+            </ul>
             <Image src={ex2} alt="" width="900" height="250"></Image>
             <Spoiler label="Valider votre réponse" border={false}>
                 <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo5/ex2">
@@ -80,13 +81,12 @@ export default function Page() {
             <h2>Exercice 5</h2>
             <p>
                 Écrivez un programme qui demande à l'utilisateur une heure et affiche s'il est temps de prendre le petit-déjeuner, le déjeuner ou le dîner, sinon on affiche que ce n'est pas l'heure d'un repas. Utilisez un format de temps en 24 heures.
-
-                <ul>
-                    <li>Le déjeuner est servi de 7h à 9h (En incluant 7h, mais pas 9h)</li>
-                    <li>Le diner est servi de 12h à 14h (En incluant 12h, mais pas 14h)</li>
-                    <li>Le souper est servi de 18h à 20h (En incluant 18h, mais pas 20h)</li>
-                </ul>
             </p>
+            <ul>
+                <li>Le déjeuner est servi de 7h à 9h (En incluant 7h, mais pas 9h)</li>
+                <li>Le diner est servi de 12h à 14h (En incluant 12h, mais pas 14h)</li>
+                <li>Le souper est servi de 18h à 20h (En incluant 18h, mais pas 20h)</li>
+            </ul>
             <Image src={ex5} alt="" width="800" height="250"></Image>
             <Spoiler label="Valider votre réponse" border={false}>
                 <CodeSubmission slug="jgaud-LaCite/logique-programmation/main/checks/labo5/ex5">
