@@ -26,7 +26,7 @@ def test_multiple_invalid():
         .stdout("Entrez un nombre", "Entrez un nombre entre 1 et 20")
         .stdin("-5", prompt=True)
         .stdout("Entrez un nombre", "Entrez un nombre entre 1 et 20")
-        .stdin("abc", prompt=True)
+        .stdin("1000", prompt=True)
         .stdout("Entrez un nombre", "Entrez un nombre entre 1 et 20")
         .stdin("20", prompt=True)
         .stdout("20", "Nombre choisi: 20")
