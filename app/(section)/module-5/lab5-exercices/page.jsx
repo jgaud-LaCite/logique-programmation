@@ -1,6 +1,5 @@
 import Spoiler from "@/components/Spoiler";
 import CodeSubmission from "@/components/CodeSubmission";
-import IC from '@/components/InlineCode';
 import Image from 'next/image';
 
 

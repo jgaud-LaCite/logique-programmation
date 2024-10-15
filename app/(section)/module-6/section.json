@@ -1,7 +1,10 @@
 {
     "title": "Module 6",
     "description": "Structures répétitives",
-    "disabled": true,
     "pages": [
+        "structures-iteratives",
+        "while",
+        "for",
+        "break-continue"
     ]
 }
