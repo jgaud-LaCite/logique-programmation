@@ -1,7 +1,11 @@
 {
     "title": "Module 7",
     "description": "Les listes",
-    "disabled": true,
+    "disabled": false,
     "pages": [
+        "introduction",
+        "iteration",
+        "multi-dimensions",
+        "lab7-exercices"
     ]
 }
