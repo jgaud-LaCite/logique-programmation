@@ -3,5 +3,11 @@
     "description": "Autres structures de données",
     "disabled": true,
     "pages": [
+        "tuple",
+        "dictionnaire",
+        "ensemble",
+        "resume",
+        "combinaisons",
+        "lab8-exercices"
     ]
 }

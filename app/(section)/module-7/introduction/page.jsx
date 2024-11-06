@@ -39,6 +39,15 @@ nombres.pop(1) # Supprime l'élément à l'index 1 de la liste
 print(nombres) # Affiche [1, 3, 4, 5]
 `;
 
+const membership_liste = `nombres = [1, 2, 3, 4, 5]
+print(3 in nombres) # True
+print(6 in nombres) # False
+
+if 3 in nombres:
+    print("L'élément 3 est présent dans la liste")
+else:
+    print("L'élément 3 n'est pas présent dans la liste")
+`;
 
 
 export default function Page(){
@@ -89,6 +98,14 @@ export default function Page(){
         </p>
         <CodeBlock language="python">
             {supression_liste}
-        </CodeBlock> 
+        </CodeBlock>
+
+        <h2>Vérifier si un élément est présent dans une liste</h2>
+        <p>
+            Vous pouvez vérifier si un élément est présent dans une liste en utilisant l'opérateur <IC>in</IC>. Cet opérateur renvoie <IC>True</IC> si l'élément est présent dans la liste et <IC>False</IC> sinon.
+        </p>
+        <CodeBlock language="python">
+            {membership_liste}
+        </CodeBlock>
     </>
 }

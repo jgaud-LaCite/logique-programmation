@@ -48,7 +48,7 @@ export default function Page() {
 
             <h2>Exercice 5</h2>
             <p>
-            Écrire un programme qui saisit une chaine de caractère et affiche le nombre de consonnes, voyelles et d’espaces.
+                Écrire un programme qui saisit une chaine de caractère et affiche le nombre de consonnes, voyelles et d’espaces.
             </p>
             <Image src={ex5} alt="" width="600" height="100"></Image>
         </section>
