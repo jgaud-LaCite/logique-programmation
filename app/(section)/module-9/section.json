@@ -1,7 +1,10 @@
 {
     "title": "Module 9",
-    "description": "Utilisation de bibliothèques pour l'intelligence artificielle et la science des données",
-    "disabled": true,
+    "description": "Lecture et écriture de fichiers",
+    "disabled": false,
     "pages": [
+        "fichier",
+        "installation",
+        "pandas"
     ]
 }
