@@ -1,7 +1,10 @@
 {
     "title": "Module 10",
-    "description": "Introduction à la programmation fonctionnelle: Fonctions lambda, Map, filter et reduce",
-    "disabled": true,
+    "description": "Introduction à la programmation fonctionnelle",
+    "disabled": false,
     "pages": [
+        "comprehension",
+        "conditions-listes",
+        "lambda"
     ]
 }
