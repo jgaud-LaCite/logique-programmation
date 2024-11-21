@@ -1,4 +1,5 @@
 import CodeBlock from '@/components/CodeBlock';
+import ColoredBox from '@/components/ColoredBox';
 import IC from '@/components/InlineCode';
 
 /**
@@ -12,7 +13,10 @@ export const metadata = {
     group: "notes",
 }
 
-const pipInstall = `python3 -m pip install <nom_de_la_bibliotheque>`
+const pipInstall = `python -m pip install <nom_de_la_bibliotheque>`
+const pipInstallAlternative = `python3 -m pip install <nom_de_la_bibliotheque>
+# ou encore
+py -m pip install <nom_de_la_bibliotheque>`
 
 export default function Page(){
     return <>
@@ -25,6 +29,13 @@ export default function Page(){
         </p>
         <CodeBlock language="shell">
             {pipInstall}
+        </CodeBlock>
+
+        <ColoredBox title="Attention">
+            Il est possible que sur votre machine Python est installé sous un autre alias, par exemple <IC>python3</IC> ou <IC>py</IC>. Si la commande plus haut vous indique que Python n'est pas installé ou vous amène sur le magasin de Microsoft, essayez avec ces autres alias, par exemple:
+        </ColoredBox>
+        <CodeBlock language="shell">
+            {pipInstallAlternative}
         </CodeBlock>
     </>
 }

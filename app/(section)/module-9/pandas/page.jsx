@@ -12,7 +12,7 @@ export const metadata = {
     group: "notes",
 }
 
-const pipInstall = `python3 -m pip install pandas`
+const pipInstall = `python -m pip install pandas`
 
 const importPandas = `import pandas as pd`
 
