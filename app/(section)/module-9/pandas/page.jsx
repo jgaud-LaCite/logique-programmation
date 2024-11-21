@@ -97,7 +97,7 @@ export default function Page(){
 
         <h4>Sélection d'une ligne</h4>
         <p>
-            Pour sélectionner une ligne spécifique d'un Dataframe, on utilise la méthode <IC>loc</IC> avec l'index de la ligne:
+            Pour sélectionner une ligne spécifique d'un Dataframe, on utilise la méthode <IC>iloc</IC> avec l'index de la ligne:
         </p>
         <CodeBlock language="python">
             {`print(df.iloc[0]) # Sélectionne la première ligne`}
