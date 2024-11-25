@@ -89,7 +89,7 @@ export default function Page(){
         
         <h4>Sélection d'une colonne</h4>
         <p>
-            Pour sélectionner une colonne spécifique d'un Dataframe, la syntaxe est similaire à la sélection d'une clé dans un dictionnaire, on utilise le nom de la colonne entre crochets:
+            Pour sélectionner une colonne spécifique d'un Dataframe, la syntaxe est similaire à la sélection d'une clé dans un dictionnaire, on utilise le nom de la colonne entre crochets. On peut également transformer une colonne d'un Dataframe en une liste en utilisant <IC>.values</IC>:
         </p>
         <CodeBlock language="python">
             {columnSelection}
